@@ -10,7 +10,7 @@ from: markdown+emoji
 format:
   # clean-revealjs:
   revealjs:
-    theme: serif
+    theme: dark
     incremental: false
     slide-number: true
     show-slide-number: speaker
