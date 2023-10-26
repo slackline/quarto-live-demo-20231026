@@ -10,7 +10,7 @@ from: markdown+emoji
 format:
   # clean-revealjs:
   revealjs:
-    theme: dark
+    theme: 
     incremental: false
     slide-number: true
     show-slide-number: speaker
@@ -32,7 +32,7 @@ project:
 
 {{< qrcode https://slackline.github.io/quarto-live-demo qr1 width=400 height=400 >}}
 
-[slackline.github.io/quarto-revealjs-template](https://slackline.github.io/quarto-revealjs-template)
+[slackline.github.io/quarto-live-demo](https://slackline.github.io/quarto-live-demo)
 
 ## Quarto RevealJS Slides
 
