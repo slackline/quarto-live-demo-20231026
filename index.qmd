@@ -1,14 +1,16 @@
 ---
-title: "Template Revealjs Quarto site"
+title: "Quarto Live Demo!"
 # format: revealjs
 author:
-  - name: Your Name
-    orcid: 0000-0000-0000-0000
-    email: email@address.work
-    affiliations: Employers Name
+  - name: Neil Shephard
+    orcid: 0000-0001-8301-6857
+    email: n.shephard@sheffield.ac.uk
+    affiliations: RSE, University of Sheffield
 from: markdown+emoji
 format:
-  clean-revealjs:
+  # clean-revealjs:
+  revealjs:
+    theme: dark
     incremental: false
     slide-number: true
     show-slide-number: speaker
@@ -18,7 +20,7 @@ format:
     # standalone: true
 revealjs-plugins:
   - confetti
-footer: "**Slides** : [**github-username.github.io/<repository>**](https://github-username.github.io/<repository>)"
+footer: "**Slides** : [**slackline.github.io/quarto-live-demo**](https://github-username.github.io/<repository>)"
 project:
   preview:
     port: 7864
@@ -28,9 +30,9 @@ project:
 
 ## Scan This!
 
-{{< qrcode https://ns-rse.github.io/quarto-revealjs-template width=400 height=400 >}}
+{{< qrcode https://slackline.github.io/quarto-live-demo qr1 width=400 height=400 >}}
 
-[ns-rse.github.io/quarto-revealjs-template](https://ns-rse.github.io/quarto-revealjs-template)
+[slackline.github.io/quarto-revealjs-template](https://slackline.github.io/quarto-revealjs-template)
 
 ## Quarto RevealJS Slides
 
@@ -97,7 +99,7 @@ Slides can have columns and we can create unordered lists.
 ```markdown
 1. A comes before
 2. B which is followed by
-3. C
+3. C before D
 ```
 
 :::
@@ -163,11 +165,9 @@ You can write equations if you need to.
 
 [Figures](https://quarto.org/docs/authoring/figures.html) can be embeded using a URL and resized.
 
-```markdown
-![Relaxing in the mountains](https://live.staticflickr.com/65535/53144704609_c5e6fa8c77_k.jpg){width=700}
-```
 
-![Relaxing in the Julian Alps](https://live.staticflickr.com/65535/53144704609_c5e6fa8c77_k.jpg){width=700}
+![SheffieldR Hex](https://raw.githubusercontent.com/SheffieldR/SheffieldR.github.io/main/images/SheffieldR_hex.png){width=400}
+
 
 ::: {.notes}
 :::
@@ -217,7 +217,8 @@ library(ggplot2)
 
 ggplot(airquality, aes(Temp, Ozone)) +
   geom_point() +
-  geom_smooth(method = "loess")
+  geom_smooth(method = "loess") +
+  ggdark::dark_theme_grey()
 ```
 
 :::

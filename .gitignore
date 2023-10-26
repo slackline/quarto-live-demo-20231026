@@ -4,3 +4,4 @@ _site/*
 *~
 .quarto/*
 _extensions/*
+.Rproj.user
